@@ -1,0 +1,38 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="cppbetterc.loginpractice.MainActivity">
+
+
+<EditText
+    android:id="@+id/username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/password"
+    android:layout_alignStart="@+id/password"
+    android:layout_marginBottom="41dp"
+    tools:text="Username" />
+
+<EditText
+    android:id="@+id/password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="72dp"
+    tools:text="Password" />
+<Button
+    android:layout_width="368dp"
+    android:layout_height="wrap_content"
+    android:text="LOGIN"
+    android:id="@+id/button"
+    android:onClick="checkLogin"
+    tools:layout_editor_absoluteY="351dp"
+    tools:layout_editor_absoluteX="8dp"
+    android:layout_marginBottom="154dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>
